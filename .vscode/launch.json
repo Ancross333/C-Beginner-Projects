@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (gdb)",
+      "type": "gdb",
+      "request": "launch",
+      "target": "./a.out",
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": true,
+      "gdbpath": "gdb",
+      "valuesFormatting": "parseText",
+      "debugger_args": ["-iex", "set debuginfod enabled off"]
+    }
+  ]
+}
